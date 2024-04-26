@@ -1,0 +1,171 @@
+/* Base styles */
+.education-content .row {
+  display: flex;
+  border-radius: 5px;
+  height: auto;
+  margin-bottom: 2rem; /* Reduced margin */
+}
+
+.education-content .title {
+  color: #fed700;
+  font-size: 24px;
+}
+
+.education-content .row .education,
+.education-content .row .internship {
+  color: #e5e5e5;
+  font-size: 16px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+.education-content h3.title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.education-content .row.timeline-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.education-content .row .timeline {
+  padding: 2rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.education-content .row .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+.education-content .row .internship .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px; /* Adjusted padding to match education */
+}
+
+.education-content .row .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.education-content .row .timeline-item::before {
+  content: "";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: #fed700;
+}
+
+.education-content .row .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+}
+
+.education-content .row .timeline-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.education-content .row .timeline-text {
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* Font size for smaller screens */
+@media (max-width: 768px) {
+  .education-content .title,
+  .education-content h3.title,
+  .education-content .row .timeline-title,
+  .education-content .row .timeline-text,
+  .education-content .row .education,
+  .education-content .row .internship {
+    font-size: 18px;
+  }
+  
+  .education-content .row {
+    flex-direction: column;
+    margin-bottom: 1rem; /* Reduced margin */
+  }
+  
+  .education-content .row .education,
+  .education-content .row .internship {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 1rem;
+    padding-bottom: 0;
+  }
+  
+  .education-content .row .internship {
+    margin-top: 0.5rem;
+    padding-top: 1rem; /* Added padding top */
+  }
+  
+  .education-content .row .timeline,
+  .education-content .row .timeline-item {
+    padding: 1rem;
+  }
+  
+  .education-content .row .timeline-item {
+    padding-bottom: 2rem;
+  }
+  
+  .education-content .row .circle-dot {
+    height: 10px;
+    width: 10px;
+  }
+  
+  .education-content .row .timeline-title,
+  .education-content .row .timeline-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-content .title,
+  .education-content h3.title {
+    font-size: 16px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  
+  .education-content .row {
+    height: auto;
+  }
+  
+  .education-content .row .timeline,
+  .education-content .row .timeline-item {
+    padding: 1rem;
+  }
+  
+  .education-content .row .timeline-item {
+    padding-bottom: 2rem;
+  }
+  
+  .education-content .row .circle-dot {
+    height: 10px;
+    width: 10px;
+  }
+  
+  .education-content .row .timeline-title,
+  .education-content .row .timeline-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}

@@ -1,0 +1,373 @@
+.App{
+  background: #190019;
+  
+}
+
+.container h2{
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+}
+#title_of{
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.homeContent {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 12rem;
+  width: 100%;
+}
+
+.homecontent1 {
+  text-align: center;
+  padding: 1rem;
+  flex: 1 1 auto;
+  justify-content: center; /* Align content horizontally */
+  height: 100%; /* Set height to 100% */
+}
+
+.homecontent2 {
+  padding: 3rem;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: flex-end; /* Align content horizontally */
+  align-items: center; /* Align content vertically */
+  height: 100%; /* Set height to 100% */
+}
+
+.homecontent2 img {
+  height: 130%;
+  
+  width: 50%;
+}
+
+.homecontent1 a {
+  font-size: 1rem;
+  padding: 5px;
+  border-radius: 10px solid white;
+  background-color: #f9aaad;
+  text-decoration: none;
+}
+
+.homecontent1 h1 {
+  color: white;
+  font-size: 2rem;
+}
+
+.homecontent1 p {
+  color: white;
+}
+
+.homecontent1 p span {
+  color: yellow;
+}
+
+.name {
+  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.name span {
+  display: inline-block;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  color: aliceblue;
+  text-shadow: 0 0 0.5rem yellow;
+  transform: translateX(-100%);
+  animation: animateText 2s forwards;
+}
+
+@keyframes animateText {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.aboutmeContent {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  height: 15rem;
+  background-color: #522B5B;
+}
+
+.aboutContent1 {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #522B5B;
+}
+
+.aboutContent1 img {
+  max-width: 100%;
+  background-color: #522B5B;
+  height: auto;
+  border:2 2 solid #190019;
+}
+
+.aboutContent2 {
+  text-align:left;
+  background-color: #522B5B;
+  padding: 2rem;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aboutContent2 h2 {
+  text-align: center;
+  font-size: 3rem;
+  background-color: #522B5B;
+  color: white;
+}
+
+.aboutContent2 p {
+  color: white;
+  background-color: #522B5B;
+}
+
+.aboutContent2 p span {
+  color: yellow;
+}
+
+.custom-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+  text-decoration: none;
+}
+
+.container-footer{
+  background-color: #522B5B;
+ padding: 0.5rem;
+ font-size: 20px;
+  text-align: center;
+}
+
+
+.heart:before {
+  left: -25px; /* Positions the left circle to the left */
+}
+
+.heart:after {
+  top: -25px; /* Positions the top circle above */
+}
+.heart {
+  color: red;
+  height: 20px;
+}
+
+
+/* App.css */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-0);
+  }
+}
+
+.section {
+  
+  animation: fadeIn 1s ease-out;
+}
+
+hr {
+ 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 0;
+  border-top: 2px solid white;
+}
+
+.container-footer {
+  text-align: center;
+  padding: 20px 0;
+  color: white;
+}
+
+.heart {
+  color: red;
+}
+
+/* Add these lines to the end of your App.css */
+/* Add these lines to the end of your App.css */
+
+@media (max-width: 576px) {
+  .homeContent {
+    width: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #190019;
+  }
+  
+  .homecontent1 {
+    text-align: center;
+    padding: 1rem;
+    flex: 1 1 0; /* Updated */
+    justify-content: center; /* Align content horizontally */
+  }
+  
+  .homecontent2 {
+    padding: 3rem;
+    flex: 1 1 0; /* Updated */
+    display: flex;
+    justify-content: center; /* Align content horizontally */
+    align-items: center; /* Align content vertically */
+  }
+
+  .homecontent1 h1 {
+    
+    font-size: 1.5rem;
+  }
+
+  .homecontent1 p {
+    font-size: 1rem;
+  }
+  
+.name {
+  display: inline-block;
+  font-size: 0.4rem;
+  overflow: hidden;
+}
+
+.name span {
+  display: inline-block;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  color: aliceblue;
+  text-shadow: 0 0 0.5rem yellow;
+  transform: translateX(-100%);
+  animation: animateText 2s forwards;
+}
+
+@keyframes animateText {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+  .homecontent1 a {
+    font-size: 0.6rem;
+    padding: 6px;
+  }
+
+  .homecontent2 img {
+    width: 100%;
+    
+    height: auto;
+    
+  }
+
+  .aboutmeContent {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #522B5B;
+  }
+
+  .aboutContent1 {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #522B5B;
+  }
+
+  .aboutContent1 img {
+    max-width: 80%;
+    background-color: #522B5B;
+    height: auto;
+    
+  }
+
+  .aboutContent2 {
+    text-align: center;
+    background-color: #522B5B;
+    padding: 1.5rem;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .aboutContent2 h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    background-color: #522B5B;
+    color: white;
+  }
+
+  .aboutContent2 p {
+    color: white;
+    background-color: #522B5B;
+    font-size: 1rem;
+  }
+
+  .aboutContent2 p span {
+    color: yellow;
+  }
+
+  .custom-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+
+  .custom-btn:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+  }
+
+  .container-footer {
+    padding: 0.5rem;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .homecontent2 img {
+    height: auto;
+    width: 70%;
+  }
+}
